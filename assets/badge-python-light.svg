@@ -1,5 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="146" height="42" viewBox="0 0 146 42" role="img" aria-labelledby="title">
-<title id="title">Python</title>
-<rect x="0.5" y="0.5" width="145" height="41" rx="12" fill="#FFFFFF" stroke="#D0D7DE"/>
-<path d="M46 9V33" stroke="#D0D7DE"/><text x="24" y="27" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="15" fill="#CF2238" text-anchor="middle" font-weight="700">Py</text><text x="58" y="27" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="16" fill="#24292F" >Python</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="46" viewBox="0 0 130 46" role="img" aria-labelledby="title">
+<title id="title">PYTHON</title>
+<defs><filter id="edge" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.2"/></filter></defs>
+<rect x="0.5" y="0.5" width="129" height="45" fill="#FCFCFA" stroke="#CFD0CF"/>
+<path d="M1 29V1H29 M100 45H129V16" fill="none" stroke="#BD292B" stroke-width="4" opacity=".65" filter="url(#edge)"/>
+<path d="M1 29V1H29 M100 45H129V16" fill="none" stroke="#BD292B" stroke-width="1"/>
+<g fill="#21242B" aria-label="PYTHON"><path transform="translate(23.276 29) scale(0.010254 -0.010254)" d="M156 0V1462H512Q680 1462 794.5 1364.0Q909 1266 909 1100Q909 932 795 834Q680 732 512 731H238V0ZM238 815H510Q645 815 735 889Q825 967 825 1100Q825 1233 731 1309Q648 1378 514 1378Q512 1378 510 1378H238Z"/><path transform="translate(35.161 29) scale(0.010254 -0.010254)" d="M68 1462H164L524 829L889 1462H985L567 731V0H483V731Z"/><path transform="translate(47.486 29) scale(0.010254 -0.010254)" d="M92 1378V1462H823V1378H500V0H416V1378Z"/><path transform="translate(58.345 29) scale(0.010254 -0.010254)" d="M156 0V1462H238V846H1042V1462H1126V0H1042V762H238V0Z"/><path transform="translate(72.855 29) scale(0.010254 -0.010254)" d="M102 731Q102 1063 312.0 1273.0Q522 1483 854 1483Q1184 1483 1396.0 1273.0Q1608 1063 1608 731Q1608 399 1396.0 189.5Q1184 -20 854 -20Q522 -20 312.0 189.5Q102 399 102 731ZM186 731Q186 438 374.5 250.5Q563 63 854 63Q1149 63 1336.5 250.5Q1524 438 1524 731Q1524 1024 1336.5 1212.5Q1149 1401 854 1401Q563 1401 374.5 1212.5Q186 1024 186 731Z"/><path transform="translate(91.712 29) scale(0.010254 -0.010254)" d="M158 0V1473L1249 193V1462H1333V-25L240 1241V0Z"/></g>
 </svg>

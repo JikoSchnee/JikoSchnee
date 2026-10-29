@@ -15,3 +15,9 @@ GitHub READMEs cannot run WebGL/JavaScript, so the published header is a looping
 5. Run `python3 scripts/atlas/assemble.py /path/to/frames` with Pillow installed. This writes two GIFs and their static PNG fallback images into `assets/`.
 
 The `<picture>` fallback uses the static frame for visitors who request reduced motion. Theme context fragments on the surrounding links follow the active GitHub appearance, including when it differs from the operating system theme.
+
+## Typography and borders
+
+`typeface.json` contains printable ASCII outlines extracted from the original project's [GeosansLight-NMS Regular.ttf](https://github.com/JikoSchnee/Atlas-Design/blob/f26271e5056ae663584510e7c8e82afce984064f/GeosansLight-NMS%20Regular/GeosansLight-NMS%20Regular.ttf). The SVG generator uses the original contours, advance widths and explicit letter spacing. No browser font download or additional dependency is needed for statistics updates. All visible profile copy is English.
+
+Section indices, project indices, labels and statistics all use this typeface. Panels use square hairline frames with warm-white edges and a narrow signal-red bloom, based on the Atlas boundary study. Secondary category labels, repeated slogans and redundant repository links are omitted; the project cards themselves open their repositories.

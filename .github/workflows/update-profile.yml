@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - scripts/profile.py
+      - scripts/atlas/typeface.json
       - .github/workflows/update-profile.yml
 
 permissions:

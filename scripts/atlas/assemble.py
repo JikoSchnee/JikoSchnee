@@ -12,6 +12,10 @@ for theme in ('dark', 'light'):
     frames = [Image.open(args.frames / f'{theme}-{i:03}.png').convert('RGB') for i in range(96)]
     if any(frame.size != (840, 320) for frame in frames):
         raise ValueError('Every captured frame must be 840 × 320 pixels')
+    for index, frame in enumerate(frames):
+        low, high = frame.crop((590, 60, 780, 260)).getextrema()[0]
+        if high - low < 100:
+            raise ValueError(f'Missing Atlas globe in {theme} frame {index}')
     # One shared palette avoids color flicker in the static header text.
     strip = Image.new('RGB', (840, 320 * 8))
     for j, i in enumerate(range(0, 96, 12)):

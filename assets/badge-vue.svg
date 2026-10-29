@@ -1,5 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="122" height="42" viewBox="0 0 122 42" role="img" aria-labelledby="title">
-<title id="title">Vue</title>
-<rect x="0.5" y="0.5" width="121" height="41" rx="12" fill="#0D1117" stroke="#30363D"/>
-<path d="M46 9V33" stroke="#30363D"/><text x="24" y="27" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="15" fill="#FF3B4E" text-anchor="middle" font-weight="700">V</text><text x="58" y="27" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="16" fill="#C9D1D9" >Vue</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="46" viewBox="0 0 110 46" role="img" aria-labelledby="title">
+<title id="title">VUE</title>
+<defs><filter id="edge" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.2"/></filter></defs>
+<rect x="0.5" y="0.5" width="109" height="45" fill="#07080D" stroke="#3D3E41"/>
+<path d="M1 29V1H29 M80 45H109V16" fill="none" stroke="#FA2A29" stroke-width="4" opacity=".65" filter="url(#edge)"/>
+<path d="M1 29V1H29 M80 45H109V16" fill="none" stroke="#FFFDF4" stroke-width="1"/>
+<g fill="#F7F4E8" aria-label="VUE"><path transform="translate(37.091 29) scale(0.010254 -0.010254)" d="M-39 1462H43L545 166L1047 1462H1130L545 -47Z"/><path transform="translate(49.735 29) scale(0.010254 -0.010254)" d="M156 365V1462H238V365Q238 224 340 143Q433 70 574 70Q576 70 578 70Q719 70 815 145Q919 227 920 365V1462H1004V365Q1004 187 874 80Q761 -14 578 -14Q400 -14 281 82Q156 186 156 365Z"/><path transform="translate(62.983 29) scale(0.010254 -0.010254)" d="M145 0V1462H848V1378H229V846H848V756H229V84H848V0Z"/></g>
 </svg>

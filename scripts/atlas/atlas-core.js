@@ -4,7 +4,7 @@ window.AtlasCore = {
     if (!hero || !canvas || !window.THREE) return;
     try {
       const capturing = Number.isFinite(capturePhase);
-      const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'high-performance' });
+      const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, preserveDrawingBuffer: capturing, powerPreference: 'high-performance' });
       renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 2)); renderer.outputColorSpace = THREE.SRGBColorSpace; renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.25;
       const scene = new THREE.Scene(), camera = new THREE.PerspectiveCamera(34, 1, .1, 100), core = new THREE.Group(); camera.position.set(0, .12, 6.7); scene.add(core);
       const light = new THREE.Vector3(.28, .52, .81).normalize(), vertex = `varying vec3 o,w,v;void main(){vec4 p=modelMatrix*vec4(position,1.);o=position;w=p.xyz;v=normalize(cameraPosition-p.xyz);gl_Position=projectionMatrix*viewMatrix*p;}`;
