@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="320" viewBox="0 0 840 320" role="img" aria-labelledby="title">
+<title id="title">Jiko / JikoSchnee — 制作实用工具，探索网页设计与交互。</title>
+<rect x="0.5" y="0.5" width="839" height="319" rx="12" fill="#0D1117" stroke="#30363D"/>
+<defs><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#30363D" stroke-opacity=".3"/></pattern></defs>
+<rect x="540" y="1" width="299" height="318" rx="12" fill="url(#grid)"/>
+<path d="M570 1L470 319" stroke="#FF3B4E" stroke-opacity=".35"/>
+<g transform="translate(682 151)" fill="none" stroke="#FF3B4E">
+<circle r="87" stroke-opacity=".25"/><circle r="63" stroke-opacity=".6"/>
+<path d="M0-94V-75M0 75V94M-94 0H-75M75 0H94"/>
+<path d="M0-50L43 25H-43ZM0 50L-43-25H43Z" stroke-width="2"/>
+<path d="M0-50V50M-43-25L43 25M-43 25L43-25" stroke-opacity=".5"/>
+<circle r="7" fill="#FF3B4E"/></g>
+<path d="M32 32H65" stroke="#FF3B4E" stroke-width="3"/>
+<style>@keyframes reveal{from{opacity:.25;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}.name{animation:reveal 1.2s ease-out both}@media(prefers-reduced-motion:reduce){.name{animation:none}}</style><text x="80" y="38" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="16" fill="#96A0AE" letter-spacing="1.2">JIKOSCHNEE / PERSONAL LAB</text><g class="name"><text x="32" y="150" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="96" fill="#F0F3F6" font-weight="700" letter-spacing="-5">Jiko</text><text x="275" y="150" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="96" fill="#FF3B4E" >_</text></g><text x="36" y="194" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="19" fill="#FF3B4E" letter-spacing=".5">BUILD TOOLS. EXPLORE DESIGN.</text><path d="M32 236H808" stroke="#30363D"/><text x="32" y="284" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="28" fill="#C9D1D9" >制作实用工具，探索网页设计与交互。</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="188" height="42" viewBox="0 0 188 42" role="img" aria-labelledby="title">
+<title id="title">TypeScript</title>
+<rect x="0.5" y="0.5" width="187" height="41" rx="12" fill="#0D1117" stroke="#30363D"/>
+<path d="M46 9V33" stroke="#30363D"/><text x="24" y="27" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="15" fill="#FF3B4E" text-anchor="middle" font-weight="700">TS</text><text x="58" y="27" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="16" fill="#C9D1D9" >TypeScript</text>
+</svg>
