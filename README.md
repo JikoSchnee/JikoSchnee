@@ -1,3 +1,4 @@
+<p>
 <a href="https://jikoschnee.github.io/Atlas-Design/#gh-dark-mode-only"><picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/header-atlas.png" />
   <img src="assets/header-atlas.gif#gh-dark-mode-only" width="100%" alt="Jiko / JikoSchnee — Atlas 旋转球；制作实用工具，探索网页设计与交互。" />
@@ -6,6 +7,7 @@
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/header-atlas-light.png" />
   <img src="assets/header-atlas-light.gif#gh-light-mode-only" width="100%" alt="Jiko / JikoSchnee — Atlas 旋转球；制作实用工具，探索网页设计与交互。" />
 </picture></a>
+</p>
 
 ## Tech Stack
 
