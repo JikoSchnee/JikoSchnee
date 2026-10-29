@@ -1,6 +1,6 @@
 # README Components · Black / Red / Gold
 
-一套可复用的 GitHub 个人页组件清单。当前个人页使用仓库内的黑红 SVG；以下第三方组件可按需替换，黑金版本使用同样的深色背景。
+一套可复用的 GitHub 个人页组件清单。当前个人页使用 Atlas 球体动图与仓库内 SVG，并自动适配 GitHub 明暗主题；以下第三方组件可按需替换，黑金示例保留作为备选。
 
 ## Palette
 
@@ -18,8 +18,8 @@ README 无法覆盖 GitHub 页面本身的背景；这套配色用于嵌入图�
 
 | 组件与源码 | 适合用途 | 本页使用方式 | 维护注意 |
 | --- | --- | --- | --- |
-| [Capsule Render](https://github.com/kyechan99/capsule-render) | 顶部横幅、页尾 | 本页使用自有 `header.svg` | 公共服务可能缓存或不可用；显式颜色不要与 `theme` 混用 |
-| [Typing SVG](https://github.com/DenverCoder1/readme-typing-svg) | 动态打字介绍 | 备选；当前仅标题入场动画 | 英文更容易控制宽度；长句和中文需检查实际字体与换行 |
+| [Capsule Render](https://github.com/kyechan99/capsule-render) | 顶部横幅、页尾 | 本页使用原版 Atlas 球体 GIF | 公共服务可能缓存或不可用；显式颜色不要与 `theme` 混用 |
+| [Typing SVG](https://github.com/DenverCoder1/readme-typing-svg) | 动态打字介绍 | 备选；当前仅 Atlas 球体旋转 | 英文更容易控制宽度；长句和中文需检查实际字体与换行 |
 | [Shields.io](https://shields.io/badges/static-badge) | 技术栈、社交与状态徽章 | 本页使用自有文字徽章 | logo 名称使用 Simple Icons slug；URL 文本需要编码 |
 | [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats) | 综合数据、语言、仓库卡 | 本页使用 Actions 生成两张 SVG | 公共实例有缓存及限流；高可靠场景采用仓库生成或自托管 |
 | [Streak Stats](https://github.com/DenverCoder1/github-readme-streak-stats) | 连续贡献记录 | 可选扩展 | 时区会影响连续天数；日期边界、缓存和上游服务影响显示 |
@@ -112,6 +112,15 @@ README 无法覆盖 GitHub 页面本身的背景；这套配色用于嵌入图�
 
 该组件作为可选扩展，不在默认个人页堆叠展示。检查服务版本对 `timezone` 的支持，并以实际返回内容为准。
 
+## GitHub 明暗主题自适应
+
+- 深色：`#0D1117` 背景、`#FF3B4E` 强调、`#C9D1D9` 正文。
+- 浅色：`#FFFFFF` 背景、`#CF2238` 强调、`#24292F` 正文。
+- 静态 SVG 的浅色版本使用 `-light.svg` 后缀，由同一生成器产生；每日统计任务同时更新明暗两套卡片。
+- README 的成对图片和链接使用 `#gh-dark-mode-only` / `#gh-light-mode-only`，按 GitHub 当前主题显示，避免仅按操作系统偏好切换。可参考 [Readme Stats 的主题上下文示例](https://github.com/anuraghazra/github-readme-stats#use-githubs-theme-context-tag)。
+- 顶部 `<picture>` 仅用于 `prefers-reduced-motion`：减少动态效果时选用静态 PNG；默认播放 GIF。点击横幅可打开完整 Atlas 交互演示。
+- 球体保留 Atlas 原项目的深色球壳与红色内核；浅色模式调整横幅底色、文字、边框和所有卡片，保留球体本来的材质。
+
 ## Maintaining this profile
 
 ### Static artwork
@@ -122,7 +131,7 @@ README 无法覆盖 GitHub 页面本身的背景；这套配色用于嵌入图�
 python3 scripts/profile.py design
 ```
 
-在 `scripts/profile.py` 中维护项目文案和图形。页面中的仓库、演示链接在 `README.md` 中维护。SVG 不包含脚本、外部字体或远程图片，仅横幅标题有一次性 CSS 入场动画，并遵循减少动态效果设置。
+在 `scripts/profile.py` 中维护项目文案和图形。页面中的仓库、演示链接在 `README.md` 中维护。SVG 不包含脚本、外部字体或远程图片。横幅使用原版 Atlas 球体的预渲染 GIF，开启减少动态效果时显示静态 PNG。生成方式和原始源码见 [Atlas 渲染说明](scripts/atlas/README.md)。
 
 ### GitHub statistics
 

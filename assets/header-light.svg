@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="320" viewBox="0 0 840 320" role="img" aria-labelledby="title">
+<title id="title">Jiko / JikoSchnee — 制作实用工具，探索网页设计与交互。</title>
+<rect x="0.5" y="0.5" width="839" height="319" rx="12" fill="#FFFFFF" stroke="#D0D7DE"/>
+<defs><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#D0D7DE" stroke-opacity=".3"/></pattern></defs>
+<rect x="540" y="1" width="299" height="318" rx="12" fill="url(#grid)"/>
+<path d="M570 1L470 319" stroke="#CF2238" stroke-opacity=".35"/>
+<path d="M32 32H65" stroke="#CF2238" stroke-width="3"/>
+<text x="80" y="38" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="16" fill="#57606A" letter-spacing="1.2">JIKOSCHNEE / PERSONAL LAB</text><g class="name"><text x="32" y="150" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="96" fill="#1F2328" font-weight="700" letter-spacing="-5">Jiko</text><text x="275" y="150" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="96" fill="#CF2238" >_</text></g><text x="36" y="194" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="19" fill="#CF2238" letter-spacing=".5">BUILD TOOLS. EXPLORE DESIGN.</text><path d="M32 236H808" stroke="#D0D7DE"/><text x="32" y="284" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="28" fill="#24292F" >制作实用工具，探索网页设计与交互。</text>
+</svg>

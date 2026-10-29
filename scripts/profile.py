@@ -33,6 +33,14 @@ def svg(title, body, width=840, height=240):
 
 
 def write_assets(outputs):
+    # Emit both GitHub appearance variants from one canonical drawing.
+    light_palette = {"#0D1117": "#FFFFFF", "#FF3B4E": "#CF2238", "#C9D1D9": "#24292F",
+                     "#96A0AE": "#57606A", "#30363D": "#D0D7DE", "#F0F3F6": "#1F2328"}
+    outputs = dict(outputs)
+    for name, content in list(outputs.items()):
+        light = re.sub("|".join(re.escape(color) for color in light_palette),
+                       lambda match: light_palette[match.group()], content)
+        outputs[name.replace(".svg", "-light.svg")] = light
     # Validate the complete batch before touching any successful previous assets.
     for content in outputs.values():
         ET.fromstring(content)
@@ -50,14 +58,8 @@ def render_design():
     body = '''<defs><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#30363D" stroke-opacity=".3"/></pattern></defs>
 <rect x="540" y="1" width="299" height="318" rx="12" fill="url(#grid)"/>
 <path d="M570 1L470 319" stroke="#FF3B4E" stroke-opacity=".35"/>
-<g transform="translate(682 151)" fill="none" stroke="#FF3B4E">
-<circle r="87" stroke-opacity=".25"/><circle r="63" stroke-opacity=".6"/>
-<path d="M0-94V-75M0 75V94M-94 0H-75M75 0H94"/>
-<path d="M0-50L43 25H-43ZM0 50L-43-25H43Z" stroke-width="2"/>
-<path d="M0-50V50M-43-25L43 25M-43 25L43-25" stroke-opacity=".5"/>
-<circle r="7" fill="#FF3B4E"/></g>
 <path d="M32 32H65" stroke="#FF3B4E" stroke-width="3"/>
-<style>@keyframes reveal{from{opacity:.25;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}.name{animation:reveal 1.2s ease-out both}@media(prefers-reduced-motion:reduce){.name{animation:none}}</style>'''
+'''
     body += text(80, 38, "JIKOSCHNEE / PERSONAL LAB", 16, MUTED, True, letter_spacing="1.2")
     body += '<g class="name">' + text(32, 150, "Jiko", 96, "#F0F3F6", True, font_weight="700", letter_spacing="-5") + text(275, 150, "_", 96, RED, True) + '</g>'
     body += text(36, 194, "BUILD TOOLS. EXPLORE DESIGN.", 19, RED, True, letter_spacing=".5")
