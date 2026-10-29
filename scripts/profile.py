@@ -12,6 +12,7 @@ import re
 import sys
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
+from atlas.svg_sphere import render_sphere
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
@@ -93,6 +94,8 @@ def render_design():
     body = text(38, 158, "JIKO", 104, TEXT, letter_spacing="14")
     body += text(38, 213, "Building tools. Exploring design.", 26, TEXT)
     outputs = {"header.svg": svg("Jiko — Building tools. Exploring design.", body, height=320)}
+    outputs["header-atlas.svg"] = svg("Jiko — Building tools. Exploring design. Rotating Atlas sphere.", body + render_sphere(), height=320)
+    outputs["header-atlas-static.svg"] = svg("Jiko — Building tools. Exploring design.", body + render_sphere(animated=False), height=320)
 
     for number, label, slug in [("01", "STACK", "stack"), ("02", "PROJECTS", "projects"), ("03", "ACTIVITY", "activity")]:
         body = text(0, 40, number, 24, RED, letter_spacing="3.4")

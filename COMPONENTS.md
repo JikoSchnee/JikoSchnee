@@ -1,6 +1,6 @@
 # README Components
 
-The profile uses the original Atlas typeface, a rendered Atlas globe, square hairline frames and two-digit indices. Dark and light variants follow GitHub’s active theme.
+The profile uses the original Atlas typeface, a code-generated SVG Atlas globe, square hairline frames and two-digit indices. Dark and light variants follow GitHub’s active theme.
 
 ## Profile design
 
@@ -111,7 +111,7 @@ The border reproduces Atlas’s illuminated hover appearance as a static image. 
 
 Paired images and links use `#gh-dark-mode-only` and `#gh-light-mode-only` to follow the active GitHub appearance. See the [theme-context examples](https://github.com/anuraghazra/github-readme-stats#use-githubs-theme-context-tag). Light SVGs use the `-light.svg` suffix.
 
-The header uses the actual Atlas geometry and shaders rendered into a looping GIF. Its picture element selects a static PNG for reduced-motion preferences. Clicking the header opens the interactive Atlas project. The sphere retains its original dark shell and red interior in both themes.
+The header is native SVG code: an icosahedral mesh projected into vector paths, animated with SVG SMIL. It contains no GIF, PNG, JavaScript, or embedded raster frames. Its lighting approximates the Atlas core and reflective shell with flat triangle colors. Its picture element selects a static SVG for reduced-motion preferences. Clicking the entire header opens Awesome Portfolio. The sphere retains its dark shell and red interior in both themes.
 
 ## Maintenance
 
@@ -123,7 +123,7 @@ python3 scripts/profile.py design
 python3 scripts/profile.py stats
 ```
 
-Both commands use Python’s standard library. `scripts/atlas/typeface.json` supplies the original font contours, so SVG viewers do not need to fetch fonts. See [Atlas rendering instructions](scripts/atlas/README.md) for the animation export process and source attribution.
+Both commands use Python’s standard library. `scripts/atlas/typeface.json` supplies the original font contours, so SVG viewers do not need to fetch fonts. See [Atlas rendering instructions](scripts/atlas/README.md) for vector generation details and source attribution.
 
 Statistics include all public non-fork repositories owned by JikoSchnee, including archived repositories and this profile repository. Stars are summed across that set. Languages are aggregated from the Languages API by byte count; the top five are shown individually and the remainder becomes Other. Byte counts do not measure proficiency.
 

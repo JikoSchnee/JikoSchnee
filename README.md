@@ -1,11 +1,11 @@
 <p>
-<a href="https://jikoschnee.github.io/Atlas-Design/#gh-dark-mode-only"><picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/header-atlas.png?v=2" />
-  <img src="assets/header-atlas.gif?v=2#gh-dark-mode-only" width="100%" alt="Jiko / JikoSchnee — Rotating Atlas core. Building tools. Exploring design." />
+<a href="https://jikoschnee.github.io/Awesome-Portfolio/#gh-dark-mode-only"><picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/header-atlas-static.svg" />
+  <img src="assets/header-atlas.svg#gh-dark-mode-only" width="100%" alt="Jiko / JikoSchnee — Rotating Atlas core. Building tools. Exploring design." />
 </picture></a>
-<a href="https://jikoschnee.github.io/Atlas-Design/#gh-light-mode-only"><picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/header-atlas-light.png?v=2" />
-  <img src="assets/header-atlas-light.gif?v=2#gh-light-mode-only" width="100%" alt="Jiko / JikoSchnee — Rotating Atlas core. Building tools. Exploring design." />
+<a href="https://jikoschnee.github.io/Awesome-Portfolio/#gh-light-mode-only"><picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/header-atlas-static-light.svg" />
+  <img src="assets/header-atlas-light.svg#gh-light-mode-only" width="100%" alt="Jiko / JikoSchnee — Rotating Atlas core. Building tools. Exploring design." />
 </picture></a>
 </p>
 
