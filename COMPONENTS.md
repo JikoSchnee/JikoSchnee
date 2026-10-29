@@ -8,12 +8,12 @@ The profile uses the original Atlas typeface, a rendered Atlas globe, square hai
 | --- | --- |
 | Typography | GeosansLight-NMS outlines, light weight, generous tracking |
 | Indices | Two digits in signal red |
-| Frames | Square hairlines; warm-white edges with a narrow red bloom |
+| Frames | Complete square white outlines with a static red glow, inset to protect the bloom |
 | Dark | `#07080D` canvas, `#FA2A29` accent, `#F7F4E8` text |
 | Light | `#FCFCFA` canvas, `#BD292B` accent, `#21242B` text |
 | Content | English only; one introduction, project names, direct card links |
 
-Project cards open their repositories. Separate Demo links open the live projects. Statistical methodology stays inside a collapsed details section.
+The three project cards open Delta Harmonica, Awesome Portfolio and Atlas Design directly. Cards contain only their index and name; no arrows or separate Demo links. Statistical methodology stays inside a collapsed details section.
 
 ## Optional components
 
@@ -105,6 +105,8 @@ Black / gold:
 ![GitHub Streak](https://streak-stats.demolab.com/?user=JikoSchnee&background=0D1117&border=30363D&stroke=30363D&ring=D4AF37&fire=D4AF37&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=D4AF37&sideLabels=C9D1D9&dates=96A0AE&timezone=Asia%2FShanghai)
 ```
 
+The border reproduces Atlas’s illuminated hover appearance as a static image. GitHub READMEs cannot support custom card hover interactions. White edges remain white in both themes; the light theme uses a softer red glow.
+
 ## Theme and motion
 
 Paired images and links use `#gh-dark-mode-only` and `#gh-light-mode-only` to follow the active GitHub appearance. See the [theme-context examples](https://github.com/anuraghazra/github-readme-stats#use-githubs-theme-context-tag). Light SVGs use the `-light.svg` suffix.
@@ -117,12 +119,15 @@ Regenerate static artwork and statistics from the repository root:
 
 ```sh
 python3 scripts/profile.py design
+# Requires GITHUB_TOKEN; the scheduled workflow supplies it automatically.
 python3 scripts/profile.py stats
 ```
 
 Both commands use Python’s standard library. `scripts/atlas/typeface.json` supplies the original font contours, so SVG viewers do not need to fetch fonts. See [Atlas rendering instructions](scripts/atlas/README.md) for the animation export process and source attribution.
 
 Statistics include all public non-fork repositories owned by JikoSchnee, including archived repositories and this profile repository. Stars are summed across that set. Languages are aggregated from the Languages API by byte count; the top five are shown individually and the remainder becomes Other. Byte counts do not measure proficiency.
+
+The contribution wall uses GitHub GraphQL `contributionsCollection.contributionCalendar`: the rolling past year, Sunday-to-Saturday weeks, actual daily counts, and the five GitHub intensity levels recolored in red. Its total and date range are embedded in the SVG’s accessible title. Visibility follows the workflow token and may differ from the account owner’s signed-in calendar; it is separate from the public non-fork repository statistics. The calendar is generated locally, with no hosted image service.
 
 The [workflow](.github/workflows/update-profile.yml) updates both themes daily at 08:17 Asia/Shanghai and supports manual runs. GitHub scheduling may be delayed or paused after prolonged inactivity. It uses the repository-provided `GITHUB_TOKEN` with `contents: write`; no personal token is needed.
 

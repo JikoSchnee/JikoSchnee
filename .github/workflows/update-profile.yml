@@ -37,7 +37,7 @@ jobs:
         run: python scripts/profile.py stats
       - name: Commit only changed cards
         run: |
-          git add assets/stats-overview*.svg assets/stats-languages*.svg
+          git add assets/stats-overview*.svg assets/stats-languages*.svg assets/stats-contributions*.svg
           if git diff --cached --quiet; then
             echo "Statistics unchanged."
             exit 0
